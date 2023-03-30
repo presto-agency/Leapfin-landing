@@ -118,7 +118,7 @@ h6 {
   min-height: 100%;
 }
 
-.container-l {
+.container {
   max-width: 1115px;
   padding: 0px 25px;
   margin: 0px auto;
@@ -508,7 +508,7 @@ h6,
 
 .hero-landing {
   position: relative;
-  padding: 150px 0 200px;
+  padding: 120px 0 200px;
   background-color: #2A326D;
 }
 
@@ -538,7 +538,7 @@ h6,
   background-repeat: no-repeat;
 }
 
-.hero-landing .container-l {
+.hero-landing .container {
   position: relative;
   z-index: 2;
 }

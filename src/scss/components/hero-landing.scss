@@ -1,6 +1,6 @@
 .hero-landing {
   position: relative;
-  padding: 150px 0 200px;
+  padding: 120px 0 200px;
   background-color: $color-royal-blue-800;
 
   &:before {
@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
   }
 
-  .container-l {
+  .container{
     position: relative;
     z-index: 2;
   }
