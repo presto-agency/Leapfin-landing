@@ -1,4 +1,4 @@
-# Leapfin landing (HTML, CSS, Tailwindcss, JS, GULP, WEBPACK)
+# Leapfin landing (HTML, CSS, SCSS, JS, GULP, WEBPACK)
 ### /docs - compiled folder
 ### for start develop :
 1. install the packages: (npm install)
