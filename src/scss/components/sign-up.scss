@@ -1,0 +1,151 @@
+.sign-up {
+  position: relative;
+  padding: 154px 0 88px;
+  background: #F7F7F9;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 80px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  &__title {
+    max-width: 585px;
+    margin: 0 auto 64px;
+    text-align: center;
+
+    h3 {
+      margin: 0 0 32px 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &_text {
+      max-width: 540px;
+      margin: 0 30px 0 0;
+
+      ul {
+        margin: 0 0 24px 0;
+
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $color-dark-gray-800;
+          padding: 0 0 0 40px;
+          margin: 0 0 16px 0;
+          background-image: url("../img/check.svg");
+          background-repeat: no-repeat;
+          background-size: 24px 24px;
+          background-position: left top;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &_form {
+      max-width: 445px;
+      width: 100%;
+
+      &.form {
+        position: relative;
+        box-shadow: 0px 8px 30px rgba(108, 123, 170, 0.12);
+        border-radius: 4px;
+        padding: 40px;
+        background-color: $color-royal-blue-800;
+
+        &:before {
+          content: '';
+          position: absolute;
+          border-radius: 4px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(74deg, rgba(255, 255, 255, 0) 28%, rgba(99, 184, 102, 0.5) 100%);
+          transition: 500ms;
+        }
+
+        > p {
+          position: relative;
+          z-index: 2;
+          transition: 500ms;
+          font-size: 18px;
+          color: $color-royal-blue-800;
+        }
+
+        form {
+          position: relative;
+          z-index: 2;
+        }
+
+        .input-container {
+          display: block;
+          margin: 0 0 10px 0;
+
+          p {
+            transition: 500ms;
+            color: $color-gray-secondary;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .sign-up {
+    padding: 80px 0 100px;
+
+    &:before {
+      border-width: 0 100vw 40px 0;
+    }
+
+    &__content {
+      flex-direction: column;
+
+      &_text {
+        margin: 0;
+        max-width: initial;
+        ul{
+          margin: 0 0 48px 0;
+        }
+      }
+
+      &_form {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 474px) {
+  .sign-up{
+    &__content{
+      &_form{
+        &.form{
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
