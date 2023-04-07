@@ -28,7 +28,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(110deg, rgba(255,255,255,0) 75%, rgba(99,184,102,0.6) 100%);
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0) 75%, rgba(99, 184, 102, 0.6) 100%);
   }
 
   .container {
@@ -48,6 +48,21 @@
   &__img {
     position: relative;
     height: 40em;
+
+    .mob {
+      display: none;
+    }
+
+    @media (max-width: 567px) {
+      height: 150em;
+      .mob {
+        display: block;
+      }
+
+      .desktop {
+        display: none;
+      }
+    }
 
     img {
       position: absolute;
@@ -86,6 +101,17 @@
 
         span {
           color: $color-punchy-green;
+        }
+      }
+
+      @media (max-width: 567px) {
+        width: 90em;
+        padding: 0 12em 13em;
+        h2 {
+          font-size: 8em;
+        }
+        p {
+          font-size: 4em;
         }
       }
     }

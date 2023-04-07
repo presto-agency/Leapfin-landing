@@ -20,8 +20,8 @@
     margin: 0 auto 64px;
     text-align: center;
 
-    h3 {
-      margin: 0 0 32px 0;
+    p {
+      margin: 0 0 16px 0;
     }
   }
 
@@ -95,9 +95,13 @@
           display: block;
           margin: 0 0 10px 0;
 
+          &.checkbox {
+            display: flex;
+          }
+
           p {
             transition: 500ms;
-            color: $color-gray-secondary;
+            color: $color-white;
             font-weight: 400;
             font-size: 12px;
             line-height: 20px;
@@ -126,7 +130,8 @@
       &_text {
         margin: 0;
         max-width: initial;
-        ul{
+
+        ul {
           margin: 0 0 48px 0;
         }
       }
@@ -139,10 +144,10 @@
 }
 
 @media (max-width: 474px) {
-  .sign-up{
-    &__content{
-      &_form{
-        &.form{
+  .sign-up {
+    &__content {
+      &_form {
+        &.form {
           padding: 20px;
         }
       }

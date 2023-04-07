@@ -396,8 +396,8 @@ h6,
 
 .input-container.checkbox p {
   font-size: 12px;
-  line-height: 20px;
-  color: #D3D3D8;
+  line-height: 16px;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -562,6 +562,10 @@ h6,
   height: 40em;
 }
 
+.hero-landing__img .mob {
+  display: none;
+}
+
 .hero-landing__img img {
   position: absolute;
   top: 0;
@@ -628,8 +632,8 @@ h6,
   text-align: center;
 }
 
-.sign-up__title h3 {
-  margin: 0 0 32px 0;
+.sign-up__title p {
+  margin: 0 0 16px 0;
 }
 
 .sign-up__content {
@@ -706,9 +710,13 @@ h6,
   margin: 0 0 10px 0;
 }
 
+.sign-up__content_form.form .input-container.checkbox {
+  display: flex;
+}
+
 .sign-up__content_form.form .input-container p {
   transition: 500ms;
-  color: #C0C0C7;
+  color: #fff;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
@@ -858,6 +866,31 @@ h6,
 
   .blog-cards__list > li .card__img {
     height: 192px;
+  }
+
+  .hero-landing__img {
+    height: 150em;
+  }
+
+  .hero-landing__img .mob {
+    display: block;
+  }
+
+  .hero-landing__img .desktop {
+    display: none;
+  }
+
+  .hero-landing__img_description {
+    width: 90em;
+    padding: 0 12em 13em;
+  }
+
+  .hero-landing__img_description h2 {
+    font-size: 8em;
+  }
+
+  .hero-landing__img_description p {
+    font-size: 4em;
   }
 }
 
