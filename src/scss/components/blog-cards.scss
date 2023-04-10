@@ -5,12 +5,46 @@
     margin: 0 0 57px 0;
     text-align: center;
 
-    p {
-      margin: 32px 0 0 0;
+    > p {
+      &:nth-of-type(1) {
+        margin: 48px 0 0 0;
+      }
+
+      margin: 24px 0 0 0;
+
       strong {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 24px;
         color: $color-royal-blue-800;
+      }
+
+      span {
+        color: $color-punchy-green;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 24px -8px 16px;
+
+      li {
+        position: relative;
+        padding: 0 0 0 32px;
+        margin: 8px;
+        width: calc((100% - (8px * 6)) / 3);
+        text-align: left;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: $color-punchy-green-800;
+        }
       }
     }
   }
@@ -121,7 +155,30 @@
 
 @media (max-width: 1023px) {
   .blog-cards {
+    padding: 0 0 80px 0;
     margin: 45px 0;
+
+    &__title {
+      ul {
+        margin: 12px -12px;
+
+        li {
+          margin: 12px;
+          width: 100%;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 24px;
+
+        strong {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
     &__list {
       > li {
         width: calc((100% - (15px * 4)) / 2);
@@ -151,6 +208,17 @@
         .card {
           &__img {
             height: 192px;
+          }
+
+          .description{
+            &__content{
+              p{
+                strong{
+                  font-size: 20px;
+                  line-height: 32px;
+                }
+              }
+            }
           }
         }
       }

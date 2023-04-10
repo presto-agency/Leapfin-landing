@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 p {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: $color-dark-gray-800;
 }
 
@@ -21,6 +21,13 @@ h2, .h2 {
   @media (max-width: 1023px) {
     font-size: 36px;
     line-height: 40px;
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: 567px) {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -36,6 +43,10 @@ h1, .h1, h3, .h3 {
   @media(max-width: 1023px) {
     font-size: 24px;
     line-height: 32px;
+  }
+  @media(max-width: 567px) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
