@@ -52,4 +52,5 @@ yarn build
 
 deploy to gh-pages automatically after push to branch
 
-deploy: [gh-pages](https://presto-agency.github.io/Leapfin-landing/)
+deploy:
+[main](https://presto-agency.github.io/Leapfin-landing/)
